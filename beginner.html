@@ -73,11 +73,74 @@ You can build web forms that actually submit data to a server using nothing more
 
 
 
+<!-- Day - 2 -->
+
+<!-- Buttons == same name mean same radio grp  -->
+<label>
+  <input name="indoor-outdoor" type="radio">indoor
+  </label>
+<label>
+  <input name="indoor-outdoor" type="radio">outdoor
+  </label>
+
+  <!-- 2 more ex. - connection of for and id attribute -->
+ <input id="indoor" type="radio" name="indoor-outdoor">
+<label for="indoor">Indoor</label>
+
+<label for="indoor"> 
+  <input id="indoor" type="radio" name="indoor-outdoor">Indoor 
+</label>
 
 
+<!-- CheckBox == connected with for and id attribute -->
+    <label for="loving"><input id="loving" type="checkbox" name="personality"> Loving</label>
+    <label for="lazy"><input id="lazy" type="checkbox" name="personality"> Lazy</label>
+    <label for="energetic"><input id="energetic" type="checkbox" name="personality"> Energetic</label><br>
 
 
+    <!-- Value attribute -->
+<!-- When a form gets submitted, the data is sent to the server and includes entries for the options selected.
+   Inputs of type radio and checkbox report their values from the value attribute. -->
 
+   <label for="indoor"><input id="indoor" value="indoor" type="radio" name="indoor-outdoor"> Indoor</label>
+   <label for="outdoor"><input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor"> Outdoor</label><br>
+   <label for="loving"><input id="loving" value="loving" type="checkbox" name="personality"> Loving</label>
+   <label for="lazy"><input id="lazy" value="lazy" type="checkbox" name="personality"> Lazy</label>
+   <label for="energetic"><input id="energetic" value="energetic" type="checkbox" name="personality"> Energetic</label><br>
+
+   <!-- Here, you have two radio inputs. When the user submits the form with the indoor option selected, the form 
+    data will include the line: indoor-outdoor=indoor. This is from the name and value attributes of the "indoor" input.
+If you omit the value attribute, the submitted form data uses the default value, which is on. -->
+
+
+<!-- CHecked option before hand -->
+<label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+
+<label for="loving"><input id="loving" type="checkbox" name="personality" value="loving" checked> Loving</label>
+
+
+<div>
+  <p>a div created</p>
+</div>
+
+
+<!-- Document type and structure of web page -->
+<!DOCTYPE html>
+<html>
+  <h1>Hello World</h1>
+</html>
+
+<!-- Metadata elements, such as link, meta, title, and style, typically go inside the head element. -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta />
+  </head>
+  <body>
+    <div>
+    </div>
+  </body>
+</html>
 
 
 
