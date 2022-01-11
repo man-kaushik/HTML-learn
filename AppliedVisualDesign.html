@@ -166,9 +166,80 @@ inherit	     Use the text-transform value from the parent element
 <!--  margin:auto;  ==> Center an Element Horizontally     -->
 
 <!-- BG-COLOR: HSL(COLOR,GRAY%, LIGHNTESS%) -->
+<style>
+    header {
+    background-color: hsl(180, 90%, 35%);
+    color: #FFFFFF;
+  }
+</style>
+
+
+<hr>
+<h1>Gradual CSS Linear Gradient</h1>
+<!-- color transitions == gradient -->
+<!-- background: linear-gradient(gradient_direction, color 1, color 2, color 3, ...); -->
+
+
+<h1>CSS Linear Gradient to Create a Striped Element</h1>
+<!-- repeating-linear-gradient() -->
+<style>
+  div{
+    background: repeating-linear-gradient(
+      90deg,
+      yellow 0px,
+      blue 40px,
+      green 40px,
+      red 80px
+    );
+  }
+</style>
+<!-- If every two color stop values are the same color, the blending isn't noticeable because
+it's between the same color, followed by a hard transition to the next color, so you end up with stripes. -->
 
 
 
+<h1>Subtle bg image</h1>
+<style>
+  body {
+    background:url("https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png")
+  }
+</style>
+
+
+
+<!--  CSS Transform scale Property ===> Change the Size of an Element -->
+<!-- transform: scale(1.5); -->
+
+<!--  div:hover{
+    transform: scale(1.1);
+  }
+ -->
+
+
+<!-- Skew an Element Along the X-Axis / Y-Axis -->
+<!--     transform: skewX(24deg);     -->
+<!--     transform:skewY(-10deg);     -->
+
+
+
+<h1>Create a Graphic Using CSS</h1>
+<style>
+  .center {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 25px 10px 0 0 blue;
+  }
+
+</style>
+<div class="center"></div>
 
 
 
