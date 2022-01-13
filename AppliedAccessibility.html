@@ -1,0 +1,266 @@
+<h3>Text Alternative to Images for Visually Impaired Accessibility</h3>
+<img src="doingKarateWow.jpeg" alt="Camper Cat doing Karate">
+
+
+<h5>
+    When an image is already explained with text content or does not add meaning 
+    to a page, the img still needs an alt attribute, but it can be set to an empty
+     string. Here's an example:
+<img src="visualDecoration.jpeg" alt="">
+</h5>
+
+
+<!-- 
+    One final point, each page should always have one (and only one) h1 element, which 
+    is the main subject of your content. This and the other headings are used in part by 
+    search engines to understand the topic of the page.
+ -->
+ <h2>Hierarchy</h2>
+ <h1>How to Become a Ninja</h1>
+ <main>
+   <h2>Learn the Art of Moving Stealthily</h2>
+   <h3>How to Hide in Plain Sight</h3>
+   <h3>How to Climb a Wall</h3>
+ 
+   <h2>Learn the Art of Battle</h2>
+   <h3>How to Strengthen your Body</h3>
+   <h3>How to Fight like a Ninja</h3>
+ 
+   <h2>Learn the Art of Living with Honor</h2>
+   <h3>How to Breathe Properly</h3>
+   <h3>How to Simplify your Life</h3>
+ </main>
+
+
+
+ <!-- The main tag also has an embedded landmark feature that assistive 
+    technology can use to navigate to the main content quickly. -->
+
+
+    <!-- article is a sectioning element and is used to wrap independent, 
+    self-contained content. The tag works well with blog entries, forum posts, or news articles. -->
+
+    <!-- <div> - groups content 
+        <section> - groups related content 
+        <article> - groups independent, self-contained content -->
+
+
+<!--  It's used to wrap introductory information or navigation links for its parent
+      tag and works well around content that's repeated at the top on multiple pages. -->
+
+
+
+      <body>
+        <header>
+          <h1>Real Coding Ninjas</h1>
+        </header>
+        <main>
+          <p>A sound clip of Zersiax's screen reader in action.</p>
+      <audio controls>
+        <source src="https://s3.amazonaws.com/freecodecamp/screen-reader.mp3" type="audio/mpeg">
+        </audio>
+        </main>
+      </body>
+
+
+<!-- For data visualizations like charts, the caption can be used to briefly note the trends or
+     conclusions for users with visual impairments -->
+
+     <figure>
+        <img src="roundhouseDestruction.jpeg" alt="Photo of Camper Cat executing a roundhouse kick">
+        <br>
+        <figcaption>
+          Master Camper Cat demonstrates proper form of a roundhouse kick.
+        </figcaption>
+      </figure>
+
+
+
+<!-- Improve Form Field Accessibility with the label Element -->
+<form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+  </form>
+
+
+<h4>Wrap Radio Buttons in a fieldset Element for Better Accessibility</h4>
+<form>
+    <fieldset>
+      <legend>Choose one of these three items:</legend>
+      <input id="one" type="radio" name="items" value="one">
+      <label for="one">Choice One</label><br>
+      <input id="two" type="radio" name="items" value="two">
+      <label for="two">Choice Two</label><br>
+      <input id="three" type="radio" name="items" value="three">
+      <label for="three">Choice Three</label>
+    </fieldset>
+  </form>   
+
+
+
+<h1>datepicker</h1>
+<label for="pickdate">Preferred Date:</label>
+<input type="date" id="pickdate" name="date">
+
+
+<h4>Standardize Times with the HTML5 datetime Attribute</h4>
+<p>Master Camper Cat officiated the cage match between Goro and
+     Scorpion <time datetime="2013-02-13">last Wednesday</time>, which ended in a draw.</p>
+
+
+
+<h3>Make Elements Only Visible to a Screen Reader</h3>
+<!-- .sr-only {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    top: auto;
+    overflow: hidden;
+  } -->
+
+
+
+  <h1>COLOR Contrast</h1>
+  <head>
+    <style>
+    body {
+      color: hsl(0, 55%, 15%);
+      background-color: hsl(120, 25%, 55%);
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Deep Thoughts with Master Camper Cat</h1>
+    </header>
+    <article>
+      <h2>A Word on the Recent Catnip Doping Scandal</h2>
+      <p>The influence that catnip has on feline behavior is well-documented, and its use as an herbal supplement in competitive ninja circles remains controversial. Once again, the debate to ban the substance is brought to the public's attention after the high-profile win of Kittytron, a long-time proponent and user of the green stuff, at the Claw of Fury tournament.</p>
+      <p>As I've stated in the past, I firmly believe a true ninja's skills must come from within, with no external influences. My own catnip use shall continue as purely recreational.</p>
+    </article>
+  </body>
+
+
+
+<h4>Mak Links Navigable with HTML Access Keys</h4>
+<h5>HTML offers the accesskey attribute to specify a shortcut key to activate or
+     bring focus to an element.</h5>
+<h6>This includes links, buttons, and form controls.</h6>
+
+<button accesskey="b">Important Button</button>
+
+
+
+<h2>Use tabindex to Add Keyboard Focus to an Element</h2>
+<!-- div, span, and p, by placing a tabindex="0" attribute on them -->
+<div tabindex="0">I need keyboard focus!</div>
+<!-- Note: A negative tabindex value (typically -1) indicates that an
+     element is focusable, but is not reachable by the keyboard. -->
+
+
+<!-- Use tabindex to Specify the Order of Keyboard Focus for Several Elements -->
+
+<input tabindex="1" type="search" name="search" id="search">
+<input tabindex="2" type="submit" name="submit" value="Submit" id="submit">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
