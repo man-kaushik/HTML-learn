@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<head>
+<title>Product Landing Page</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="">
+<style>
+#nav-bar{
+        position: fixed; 
+        top: 0;
+        width: 100%;
+    }
+
+@media (min-width: 300px){
+  #nav-bar{
+        position: fixed; 
+        bottom: 0;
+        width: 100%;
+    }
+}
+#box-container{
+  display:flex;
+  height:500px;
+}
+#html{
+  background-color:red;
+  width:200px;
+  height:10px;
+}
+#css{
+  background-color:green;
+  width:200px;
+  height:10px;
+}
+#js{
+  background-color:blue;
+  width:200px;
+  height:10px;
+}
+</style>
+</head>
+<body>
+
+    <h1 id="header">
+        <img id="header-img" src="http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/asteroid_blend.png" alt="LOGO"/>
+        <nav id="nav-bar">
+            <a class="nav-link" href="#html">HTML</a> |
+            <a class="nav-link" href="#css">CSS</a> |
+            <a class="nav-link" href="#js">JavaScript</a> |
+        </nav>
+    </h1>
+    
+    <video id="video" width="400" controls>
+        <source src="mov_bbb.mp4" type="video/mp4">
+        <source src="mov_bbb.ogg" type="video/ogg">
+        Your browser does not support HTML video.
+      </video>
+    
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input id="email" name="email" type="email" placeholder="Fill your email" required/>
+        <br/>
+        <input id="submit" value="Submit" type="submit"/>
+    </form>
+    
+      <div id="box-container">
+        <div id="html"></div>
+        <div id="css"></div>
+        <div id="js"></div>
+      </div>
+
+</body>
+</html>
