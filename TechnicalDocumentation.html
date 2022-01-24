@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<head>
+<title>Technical Documentation</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="">
+<style>
+html, body {
+  min-width: 290px;
+  color: #4d4e53;
+  background-color: #ffffff;
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+}
+
+header {
+  color: black;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: thin;
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+}
+
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  color: #4d4e53;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: #4d4e53;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+section article {
+  color: #4d4e53;
+  margin: 15px;
+  font-size: 0.96em;
+}
+
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+  code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
+}
+
+</style>
+</head>
+<body>
+    <main id="main-doc">
+        <section id="heading_1" class="main-section">
+          <header>heading 1</header>
+          <p>1 <li>description</li></p>
+          <code>x+1</code>
+          <p>Heading 1 footer</p>
+        </section>
+        <section id="heading_2" class="main-section">
+              <header>heading 2</header>
+          <p> 2 <li>description</li></p>
+          <code>x+2</code>
+          <p>Heading 2 footer</p>
+        </section>
+        <section id="heading_3" class="main-section">
+              <header>heading 3</header>
+          <p> 3 <li>description</li></p>
+          <code>x+3</code>
+          <p>Heading 3 footer</p>
+        </section>
+        <section id="heading_4" class="main-section">
+              <header>heading 4</header>
+          <p> 4 <li>description</li></p>
+          <code>x+4</code>
+          <p>Heading 4 footer</p>
+        </section>
+        <section id="heading_5" class="main-section">
+              <header>heading 5</header>
+          <p> 5 <li>description</li></p>
+          <code>x+5</code>
+          <p>Heading 5 footer</p>
+        </section>
+      </main> 
+      
+      <nav id="navbar">
+        <header>Types of heading</header>
+        <a class="nav-link" href="#heading_1">heading 1</a>
+        <a class="nav-link" href="#heading_2">heading 2</a>
+        <a class="nav-link" href="#heading_3">heading 3</a>
+        <a class="nav-link" href="#heading_4">heading 4</a>
+        <a class="nav-link" href="#heading_5">heading 5</a>
+      </nav>
+</body>
